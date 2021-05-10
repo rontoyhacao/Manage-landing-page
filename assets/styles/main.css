@@ -139,10 +139,8 @@ header .header-container .cta-button {
   padding: 2rem 0;
   text-align: center;
   position: relative;
-  top: 0;
+  top: 7rem;
   border-radius: .4rem;
-  -webkit-transition: top .2s;
-  transition: top .2s;
 }
 
 .mobile-nav-bg .mobile-nav-links li {
@@ -160,10 +158,6 @@ header .header-container .cta-button {
 .open .mobile-nav-bg {
   visibility: visible;
   opacity: 1;
-}
-
-.open .mobile-nav-bg .mobile-nav-links {
-  top: 7rem;
 }
 
 .swiper-container {

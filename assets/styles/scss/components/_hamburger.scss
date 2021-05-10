@@ -23,9 +23,9 @@
         padding: 2rem 0;
         text-align: center;
         position: relative;
-        top: 0;
+        top: 7rem;
         border-radius: .4rem;
-        transition: top .2s;
+        // transition: top .2s;
         li {
             margin-bottom: 2rem;
             &:last-child {
@@ -41,8 +41,5 @@
     .mobile-nav-bg {
         visibility: visible;
         opacity: 1;
-        .mobile-nav-links {
-            top: 7rem;
-        }
     }
 }
