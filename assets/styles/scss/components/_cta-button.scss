@@ -1,0 +1,10 @@
+.cta-button, input[type="submit"] {
+    background-color: $Bright-Red;
+    padding: 1em 2em;
+    display: inline-block;
+    color: $Very-Pale-Red;
+    font-weight: 700;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: 0 5px 10px hsla(12, 88%, 59%, 0.5);
+}

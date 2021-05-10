@@ -68,7 +68,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.75rem;
 }
 
 h2 {
@@ -107,6 +107,10 @@ header .header-container .cta-button {
   display: none;
 }
 
+.hero {
+  padding-bottom: 7rem;
+}
+
 .hero .hero-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -119,6 +123,10 @@ header .header-container .cta-button {
   width: 88%;
   margin: 0 auto;
   max-width: 70rem;
+}
+
+.hero .hero-container__content p {
+  margin-bottom: 2rem;
 }
 
 .hero .hero-container__illustration img {
@@ -189,6 +197,18 @@ header .header-container .cta-button {
 .open .mobile-nav-bg {
   visibility: visible;
   opacity: 1;
+}
+
+.cta-button, input[type="submit"] {
+  background-color: #f25f3a;
+  padding: 1em 2em;
+  display: inline-block;
+  color: #ffefeb;
+  font-weight: 700;
+  border-radius: 2rem;
+  border: none;
+  -webkit-box-shadow: 0 5px 10px rgba(242, 95, 58, 0.5);
+          box-shadow: 0 5px 10px rgba(242, 95, 58, 0.5);
 }
 
 .swiper-container {
