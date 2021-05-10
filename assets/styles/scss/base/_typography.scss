@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap');
+
+html {
+    font-size: 14px;
+}
+body {
+    font-family: 'Be Vietnam', sans-serif;
+}
+p {
+    line-height: 2;
+    color: $Dark-Grayish-Blue;
+    margin: 1rem 0;
+}
+h1, h2, h3 {
+    color: $Dark-Blue;
+    font-weight: 700;
+    line-height: 1.2;
+}
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+.mobile-nav-links a {
+    color: $Dark-Blue;
+    font-weight: 700;
+}

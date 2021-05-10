@@ -1,0 +1,14 @@
+header {
+    padding: 3rem 0;
+    .header-container {
+        @include space-between;
+        @include wide-container;
+        // position: relative;
+        img {
+            height: 1.3rem;
+        }
+        .cta-button {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: 'Be Vietnam', sans-serif;
+}
+
+p {
+  line-height: 2;
+  color: #9095a7;
+  margin: 1rem 0;
+}
+
+h1, h2, h3 {
+  color: #242d52;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.mobile-nav-links a {
+  color: #242d52;
+  font-weight: 700;
+}
+
+header {
+  padding: 3rem 0;
+}
+
+header .header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 88%;
+  margin: 0 auto;
+  max-width: 70rem;
+}
+
+header .header-container img {
+  height: 1.3rem;
+}
+
+header .header-container .cta-button {
+  display: none;
+}
+
+.hamburger {
+  background: url(/assets/images/icon-hamburger.svg) no-repeat center;
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.mobile-nav-bg {
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  -webkit-box-shadow: inset 0 -120vh 300px -400px rgba(0, 0, 0, 0.4);
+          box-shadow: inset 0 -120vh 300px -400px rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+.mobile-nav-bg .mobile-nav-links {
+  width: 88%;
+  margin: 0 auto;
+  max-width: 70rem;
+  background: white;
+  padding: 2rem 0;
+  text-align: center;
+  position: relative;
+  top: 0;
+  border-radius: .4rem;
+  -webkit-transition: top .2s;
+  transition: top .2s;
+}
+
+.mobile-nav-bg .mobile-nav-links li {
+  margin-bottom: 2rem;
+}
+
+.mobile-nav-bg .mobile-nav-links li:last-child {
+  margin-bottom: 0;
+}
+
+.open .hamburger {
+  background: url(/assets/images/icon-close.svg) no-repeat center;
+}
+
+.open .mobile-nav-bg {
+  visibility: visible;
+  opacity: 1;
+}
+
+.open .mobile-nav-bg .mobile-nav-links {
+  top: 7rem;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=main.css.map */
