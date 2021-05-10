@@ -14,15 +14,12 @@
                 background: url(/assets/images/bg-tablet-pattern.svg) no-repeat;
                 position: absolute;
                 top: -8rem;
-                right: -10rem;
+                right: 0;
                 background-size: cover;
                 height: 32rem;
-                width: 32rem;
+                width: 22rem;
                 z-index: -1;
             }
         }
     }
-}
-body {
-    overflow-x: hidden;
 }
