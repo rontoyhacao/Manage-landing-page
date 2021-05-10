@@ -12,11 +12,6 @@ hamburger.addEventListener('click', () => {
     }
 });
 
-document.querySelector('.mobile-nav-bg').addEventListener('click', () => {
-    navContainer.classList.remove('open');
-    document.body.style.removeProperty('overflow');
-});
-
 function scrollTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0; // for chrome

@@ -5,8 +5,21 @@
         flex-direction: column-reverse;
         text-align: center;
         @include wide-container;
-        &__content p {
-            margin-bottom: 2rem;
+        &__content {
+            p {
+                margin-bottom: 2rem;
+            }
+            &::before {
+                content: '';
+                background: url(/assets/images/bg-tablet-pattern.svg) no-repeat;
+                position: absolute;
+                top: 36rem;
+                right: 0;
+                background-size: cover;
+                height: 24rem;
+                width: 10rem;
+                z-index: -1;
+            }
         }
         &__illustration {
             img {

@@ -1,0 +1,32 @@
+.different {
+    .different-container {
+        &__description {
+            // @include wide-container;
+            text-align: center;
+            padding: 0 3rem 3rem;
+        }
+        &__list {
+            .list-heading-container {
+                background-color: hsla(12, 88%, 59%, .1);
+                .list-heading {
+                    display: flex;
+                    @include wide-container;
+                    span {
+                        background-color: $Bright-Red;
+                        padding: .5em 1em;
+                        border-radius: 1rem;
+                        color: $Very-Pale-Red;
+                    }
+                    h3 {
+                        padding: .5rem;
+                        @include wide-container;
+                    }
+                }
+            }
+            p {
+                @include wide-container;
+                margin: 1rem auto;
+            }
+        }
+    }
+}

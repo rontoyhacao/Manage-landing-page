@@ -129,6 +129,18 @@ header .header-container .cta-button {
   margin-bottom: 2rem;
 }
 
+.hero .hero-container__content::before {
+  content: '';
+  background: url(/assets/images/bg-tablet-pattern.svg) no-repeat;
+  position: absolute;
+  top: 36rem;
+  right: 0;
+  background-size: cover;
+  height: 24rem;
+  width: 10rem;
+  z-index: -1;
+}
+
 .hero .hero-container__illustration img {
   max-width: 100%;
   height: auto;
@@ -144,6 +156,45 @@ header .header-container .cta-button {
   height: 32rem;
   width: 22rem;
   z-index: -1;
+}
+
+.different .different-container__description {
+  text-align: center;
+  padding: 0 3rem 3rem;
+}
+
+.different .different-container__list .list-heading-container {
+  background-color: rgba(242, 95, 58, 0.1);
+}
+
+.different .different-container__list .list-heading-container .list-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 88%;
+  margin: 0 auto;
+  max-width: 70rem;
+}
+
+.different .different-container__list .list-heading-container .list-heading span {
+  background-color: #f25f3a;
+  padding: .5em 1em;
+  border-radius: 1rem;
+  color: #ffefeb;
+}
+
+.different .different-container__list .list-heading-container .list-heading h3 {
+  padding: .5rem;
+  width: 88%;
+  margin: 0 auto;
+  max-width: 70rem;
+}
+
+.different .different-container__list p {
+  width: 88%;
+  margin: 0 auto;
+  max-width: 70rem;
+  margin: 1rem auto;
 }
 
 .hamburger {
