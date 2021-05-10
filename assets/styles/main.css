@@ -107,6 +107,41 @@ header .header-container .cta-button {
   display: none;
 }
 
+.hero .hero-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  text-align: center;
+  width: 88%;
+  margin: 0 auto;
+  max-width: 70rem;
+}
+
+.hero .hero-container__illustration img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero .hero-container__illustration::before {
+  content: '';
+  background: url(/assets/images/bg-tablet-pattern.svg) no-repeat;
+  position: absolute;
+  top: -8rem;
+  right: -10rem;
+  background-size: cover;
+  height: 32rem;
+  width: 32rem;
+  z-index: -1;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 .hamburger {
   background: url(/assets/images/icon-hamburger.svg) no-repeat center;
   height: 2rem;

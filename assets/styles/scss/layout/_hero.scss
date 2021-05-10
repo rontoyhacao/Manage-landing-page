@@ -1,0 +1,28 @@
+.hero {
+    .hero-container {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        @include wide-container;
+        &__illustration {
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+            &::before {
+                content: '';
+                background: url(/assets/images/bg-tablet-pattern.svg) no-repeat;
+                position: absolute;
+                top: -8rem;
+                right: -10rem;
+                background-size: cover;
+                height: 32rem;
+                width: 32rem;
+                z-index: -1;
+            }
+        }
+    }
+}
+body {
+    overflow-x: hidden;
+}

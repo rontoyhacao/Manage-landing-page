@@ -5,9 +5,9 @@ hamburger.addEventListener('click', () => {
     navContainer.classList.toggle('open');
     if(navContainer.classList.contains('open')) {
         scrollTop();
-        document.body.style.overflowY = 'hidden';
+        document.body.style.overflow = 'hidden';
     } else {
-        document.body.style.removeProperty('overflow-y');
+        document.body.style.removeProperty('overflow');
 
     }
 });
