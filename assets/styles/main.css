@@ -164,7 +164,7 @@ header .header-container .cta-button {
 }
 
 .different .different-container__list .list-heading-container {
-  background-color: rgba(242, 95, 58, 0.1);
+  background-color: #ffefeb;
 }
 
 .different .different-container__list .list-heading-container .list-heading {
@@ -194,7 +194,11 @@ header .header-container .cta-button {
   width: 88%;
   margin: 0 auto;
   max-width: 70rem;
-  margin: 1rem auto;
+  margin: 1rem auto 4rem;
+}
+
+.testimonials {
+  text-align: center;
 }
 
 .hamburger {
@@ -265,12 +269,15 @@ header .header-container .cta-button {
 .swiper-container {
   width: 100%;
   height: 100%;
+  width: 88%;
+  margin: 0 auto;
+  max-width: 70rem;
+  padding: 6rem 0 3rem;
+  margin-bottom: 3rem;
 }
 
-.swiper-slide {
+.swiper-container .swiper-slide {
   text-align: center;
-  font-size: 18px;
-  background: #fff;
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -281,13 +288,21 @@ header .header-container .cta-button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fafafa;
+  padding: 5rem 1rem 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.swiper-container .swiper-slide img {
+  position: absolute;
+  height: 5rem;
+  width: 5rem;
+  top: -2.5rem;
+  z-index: 2;
 }
 /*# sourceMappingURL=main.css.map */
