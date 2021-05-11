@@ -277,7 +277,7 @@ header .header-container .nav-container .desktop-nav {
 .different .different-container__list .list-heading-container .list-heading span {
   background-color: #f25f3a;
   padding: .5em 1em;
-  border-radius: 1rem;
+  border-radius: 2rem;
   color: #ffefeb;
 }
 
@@ -293,6 +293,31 @@ header .header-container .nav-container .desktop-nav {
   margin: 0 auto;
   max-width: 69rem;
   margin: 1rem auto 4rem;
+}
+
+@media screen and (min-width: 53.125em) {
+  .different-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 88%;
+    margin: 0 auto;
+    max-width: 69rem;
+  }
+  .different-container__description {
+    text-align: initial !important;
+    width: 50%;
+    padding: 0 !important;
+  }
+  .different-container__description p {
+    width: 70%;
+  }
+  .different-container__list {
+    width: 50%;
+  }
+  .different-container__list .list-heading-container {
+    background-color: initial !important;
+  }
 }
 
 .testimonials {

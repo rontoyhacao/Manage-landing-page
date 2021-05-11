@@ -14,7 +14,7 @@
                     span {
                         background-color: $Bright-Red;
                         padding: .5em 1em;
-                        border-radius: 1rem;
+                        border-radius: 2rem;
                         color: $Very-Pale-Red;
                     }
                     h3 {
@@ -26,6 +26,28 @@
             p {
                 @include wide-container;
                 margin: 1rem auto 4rem;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 53.125em) {
+    .different-container {
+        display: flex;
+        @include wide-container;
+        &__description {
+            text-align: initial !important;
+            width: 50%;
+            padding: 0 !important;
+            p {
+                width: 70%;
+            }
+        }
+        &__list {
+            width: 50%;
+            .list-heading-container {
+                background-color: initial !important;
             }
         }
     }
