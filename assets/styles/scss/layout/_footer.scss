@@ -1,0 +1,40 @@
+footer {
+    background-color: $Very-Dark-Blue;
+    .footer-container {
+        @include wide-container;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 3rem 0;
+        &__nav {
+            margin: 3rem auto;
+            .footer-nav {
+                display: grid;
+                grid-template-rows: repeat(4, 2.5rem);
+                grid-template-columns: repeat(auto-fit, 11rem);
+                grid-auto-flow: column;
+                text-align: initial;
+                align-items: center;
+            }
+        }
+        &__social {
+            display: flex;
+            flex-direction: column-reverse;
+            text-align: center;
+            svg {
+                margin: 0 auto 3rem;
+            }
+            .social-links {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                justify-items: center;
+                margin-bottom: 3rem;
+            }
+            .copyright span:last-of-type {
+                display: block;
+            }
+        }
+        &__input span {
+            display: none;
+        }
+    }
+}

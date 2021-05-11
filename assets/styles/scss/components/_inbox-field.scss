@@ -1,0 +1,11 @@
+form {
+    display: flex;
+    input[name='inbox'] {
+        border: none;
+        padding: 1em 2em;
+        font: inherit;
+        border-radius: 2rem;
+        width: 100%;
+        margin-right: .5rem;
+    }
+}

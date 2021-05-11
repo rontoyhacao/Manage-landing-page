@@ -26,3 +26,19 @@ h2 {
     color: $Dark-Blue;
     font-weight: 700;
 }
+.cta-container h2 {
+    color: $Vary-Light-Gray;
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+.footer-container {
+    a {
+        color: $Vary-Light-Gray;
+    }
+    .social-links a {
+        font-size: 2.5rem;
+    }
+    span {
+        color: $Dark-Grayish-Blue;
+    }
+}

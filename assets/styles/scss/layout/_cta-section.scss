@@ -1,0 +1,20 @@
+.cta {
+    background-color: $Bright-Red;
+    position: relative;
+    .cta-container {
+        text-align: center;
+        @include wide-container;
+        padding: 5rem 0;
+        position: relative;
+        .cta-button {
+            background-color: $Vary-Light-Gray;
+            color: $Bright-Red;
+        }
+    }
+    &::before {
+        content: url(/assets/images/bg-simplify-section-mobile.svg);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
