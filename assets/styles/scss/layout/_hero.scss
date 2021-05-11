@@ -40,3 +40,20 @@
         }
     }
 }
+
+@media screen and (min-width: 53.125em) {
+    .hero {
+        padding-top: 3rem;
+        .hero-container {
+            flex-direction: row !important;
+            text-align: initial;
+            align-items: center;
+            &__content {
+                width: 50%;
+                p {
+                    width: 70%;
+                }
+            }
+        }
+    }
+}

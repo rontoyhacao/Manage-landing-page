@@ -98,6 +98,11 @@ h2 {
   color: #9095a7;
 }
 
+.desktop-nav a {
+  color: #242d52;
+  font-weight: 500;
+}
+
 @media screen and (min-width: 48em) {
   html {
     font-size: 16px;
@@ -105,8 +110,19 @@ h2 {
 }
 
 @media screen and (min-width: 53.125em) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
   .footer-container .social-links a {
     font-size: 1.5rem;
+  }
+  .cta-container h2 {
+    color: #fafafa;
+    font-size: 2.5rem;
+    margin: 2rem 0;
   }
 }
 
@@ -135,6 +151,36 @@ header .header-container img {
 
 header .header-container .cta-button {
   display: none;
+}
+
+header .header-container .nav-container .desktop-nav {
+  display: none;
+}
+
+@media screen and (min-width: 53.125em) {
+  header {
+    padding: 4rem 0;
+  }
+  header .header-container img {
+    height: initial;
+  }
+  header .header-container .nav-container .hamburger {
+    display: none;
+  }
+  header .header-container .nav-container .desktop-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .header-container .nav-container .desktop-nav li {
+    margin: 0 1rem;
+  }
+  header .header-container .nav-container .mobile-nav-bg {
+    display: none;
+  }
+  header .header-container .cta-button {
+    display: block;
+  }
 }
 
 .hero {
@@ -186,6 +232,28 @@ header .header-container .cta-button {
   height: 32rem;
   width: 22rem;
   z-index: -1;
+}
+
+@media screen and (min-width: 53.125em) {
+  .hero {
+    padding-top: 3rem;
+  }
+  .hero .hero-container {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    text-align: initial;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero .hero-container__content {
+    width: 50%;
+  }
+  .hero .hero-container__content p {
+    width: 70%;
+  }
 }
 
 .different .different-container__description {
@@ -257,6 +325,36 @@ header .header-container .cta-button {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+@media screen and (min-width: 53.125em) {
+  .cta {
+    overflow: hidden;
+  }
+  .cta .cta-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: initial;
+    padding: 2rem 0;
+  }
+  .cta .cta-container h2 {
+    width: 50%;
+  }
+  .cta::before {
+    content: url(/assets/images/bg-simplify-section-desktop.svg);
+    position: absolute;
+    top: -7rem;
+    right: -16rem;
+    -webkit-transform: initial;
+            transform: initial;
+  }
 }
 
 footer {

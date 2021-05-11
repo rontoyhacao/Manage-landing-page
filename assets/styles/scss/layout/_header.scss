@@ -10,5 +10,36 @@ header {
         .cta-button {
             display: none;
         }
+        .nav-container .desktop-nav {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 53.125em) {
+    header {
+        padding: 4rem 0;
+        .header-container {
+            img {
+                height: initial;
+            }
+            .nav-container {
+                .hamburger {
+                    display: none;
+                }
+                .desktop-nav {
+                    display: flex;
+                    li {
+                        margin: 0 1rem;
+                    }
+                }
+                .mobile-nav-bg {
+                    display: none;
+                }
+            }
+            .cta-button {
+                display: block;
+            }
+        }
     }
 }

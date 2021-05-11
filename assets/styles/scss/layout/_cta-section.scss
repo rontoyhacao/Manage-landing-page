@@ -18,3 +18,24 @@
         transform: translateY(-50%);
     }
 }
+
+@media screen and (min-width: 53.125em) {
+    .cta {
+        overflow: hidden;
+        .cta-container {
+            @include space-between;
+            text-align: initial;
+            padding: 2rem 0;
+            h2 {
+                width: 50%;
+            }
+        }
+        &::before {
+            content: url(/assets/images/bg-simplify-section-desktop.svg);
+            position: absolute;
+            top: -7rem;
+            right: -16rem;
+            transform: initial;
+        }
+    }
+}
