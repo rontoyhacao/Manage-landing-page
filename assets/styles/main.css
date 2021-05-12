@@ -733,7 +733,7 @@ form .input-container input[name='email'] {
 }
 
 form .input-container span {
-  margin-top: .5rem;
+  margin: .5rem 0;
   padding: 0 2rem;
   font-size: .9rem;
   font-style: italic;
@@ -749,5 +749,20 @@ form .valid span {
 
 form .email-submit {
   font-family: inherit;
+}
+
+@media screen and (max-width: 21.875em) {
+  form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  form input[name='email'] {
+    margin-right: 0 !important;
+  }
+  form .email-submit {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

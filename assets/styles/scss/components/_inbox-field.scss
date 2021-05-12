@@ -13,7 +13,7 @@ form {
             margin-right: .5rem;
         }
         span {
-            margin-top: .5rem;
+            margin: .5rem 0;
             padding: 0 2rem;
             font-size: .9rem;
             font-style: italic;
@@ -27,5 +27,16 @@ form {
     }
     .email-submit {
         font-family: inherit;
+    }
+}
+@media screen and (max-width: 21.875em) {
+    form {
+        flex-direction: column;
+        input[name='email'] {
+            margin-right: 0 !important;
+        }
+        .email-submit {
+            width: 100%;
+        }
     }
 }
