@@ -170,9 +170,12 @@
         </ul>
       </div>
       <div class="footer-container__input">
-        <form>
-          <input type="text" name="inbox" id="" placeholder="Updates in your inbox…">
-          <input type="submit" value="Go">
+        <form class="email-form">
+          <div class="input-container">
+            <input type="email" name="email" id="email" placeholder="Updates in your inbox…">
+            <span></span>
+          </div>
+          <input class="email-submit" type="submit" value="Go">
         </form>
         <div class="copyright">
           <span>Copyright 2020. All Rights Reserved</span>
@@ -184,5 +187,6 @@
   <script src="/assets/scripts/hamburger.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="/assets/scripts/testimonials-slider.js"></script>
+  <script src="/assets/scripts/emailValidate.js"></script>
 </body>
 </html>

@@ -53,6 +53,13 @@
                 p {
                     width: 70%;
                 }
+                &::before {
+                    content: none;
+                }
+            }
+            &__illustration::before {
+                height: 48rem;
+                width: 42rem;
             }
         }
     }

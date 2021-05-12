@@ -1,10 +1,10 @@
 footer {
     background-color: $Very-Dark-Blue;
+    padding: 3rem 0;
     .footer-container {
         @include wide-container;
         display: flex;
         flex-direction: column-reverse;
-        padding: 3rem 0;
         &__nav {
             margin: 3rem auto;
             .footer-nav {
@@ -33,7 +33,7 @@ footer {
                 display: block;
             }
         }
-        &__input span {
+        &__input .copyright {
             display: none;
         }
     }
@@ -76,7 +76,7 @@ footer {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            span {
+            .copyright {
                 display: block;
             }
         }

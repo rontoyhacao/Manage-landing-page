@@ -1,4 +1,4 @@
-.cta-button, input[type="submit"] {
+.cta-button, .email-submit {
     background-color: $Bright-Red;
     padding: 1em 2em;
     display: inline-block;
@@ -8,4 +8,8 @@
     border: none;
     box-shadow: 0 5px 10px hsla(12, 88%, 59%, 0.5);
     cursor: pointer;
+    transition: opacity .2s;
+    &:hover {
+        opacity: .6;
+    }
 }

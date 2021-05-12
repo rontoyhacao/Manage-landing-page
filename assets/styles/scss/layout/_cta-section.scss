@@ -1,10 +1,10 @@
 .cta {
     background-color: $Bright-Red;
+    padding: 5rem 0;
     position: relative;
     .cta-container {
         text-align: center;
         @include wide-container;
-        padding: 5rem 0;
         position: relative;
         .cta-button {
             background-color: $Vary-Light-Gray;
@@ -21,11 +21,11 @@
 
 @media screen and (min-width: 53.125em) {
     .cta {
+        padding: 2rem 0;
         overflow: hidden;
         .cta-container {
             @include space-between;
             text-align: initial;
-            padding: 2rem 0;
             h2 {
                 width: 50%;
             }

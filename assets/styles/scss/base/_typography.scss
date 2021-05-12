@@ -34,6 +34,10 @@ h2 {
 .footer-container {
     a {
         color: $Vary-Light-Gray;
+        transition: color .2s;
+        &:hover {
+            color: $Bright-Red;
+        }
     }
     .social-links a {
         font-size: 2.5rem;
@@ -45,6 +49,10 @@ h2 {
 .desktop-nav a {
     color: $Dark-Blue;
     font-weight: 500;
+    transition: opacity .2s;
+    &:hover {
+        opacity: .6;
+    }
 }
 
 @media screen and (min-width: 48em) {

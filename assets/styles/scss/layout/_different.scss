@@ -1,4 +1,5 @@
 .different {
+    position: relative;
     .different-container {
         &__description {
             // @include wide-container;
@@ -33,6 +34,17 @@
 
 
 @media screen and (min-width: 53.125em) {
+    .different::before {
+        content: '';
+        background: url(/assets/images/bg-tablet-pattern.svg) no-repeat;
+        position: absolute;
+        top: 18rem;
+        left: -30rem;
+        background-size: cover;
+        height: 48rem;
+        width: 48rem;
+        z-index: -1;
+    }
     .different-container {
         display: flex;
         @include wide-container;
